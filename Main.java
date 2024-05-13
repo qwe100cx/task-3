@@ -144,7 +144,7 @@ public class Main {
                 if (returnValue == JFileChooser.APPROVE_OPTION) {
                     String filename = fileChooser.getSelectedFile().getAbsolutePath();
                     list.readListFromFile(filename);
-                    textArea.setText(list.getListAsString());
+                    textField.setText(list.getListAsString());
                 }
             }
         });
@@ -162,6 +162,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 list.clearList();
                 textArea.setText("пусто");
+                textField.setText("пусто");
             }
         });
 
